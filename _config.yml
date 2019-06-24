@@ -1,0 +1,67 @@
+# Site
+name: 'Jekyll Toolbox Theme on Github'
+description: 'Jekyll Toolbox Theme based on Bootstrap'
+baseurl: '/theme-bootstrap-modern-business'
+
+include: ["_pages"]
+#permalink: /:title/
+
+# Plugins
+#   - jekyll-feed
+plugins: 
+#  - jekyll-sitemap
+#  - jekyll-paginate
+#  - jekyll-seo-tag
+ 
+# Defaults
+defaults:
+
+  # all posts
+  - scope:
+      path: "_posts"
+    values:
+      layout: post
+      
+  # all pages
+  - scope:
+      path: "_pages"
+    values:
+      layout: page
+
+#
+collections_dir: collections
+collections:
+  services:
+    title: "Services"
+    output: true # store output files for each item under the collections folder
+
+  teams:
+    title: "Teams"
+    output: true
+
+  pages:
+    title: "Pages"
+    output: true
+
+  customers:
+    title: "Customers"
+    output: true
+
+  portfolio:
+    title: "Portfolio"
+    output: true
+
+# Syntax
+markdown: kramdown
+highlighter: rouge
+
+# Pagination
+#paginate: 20
+
+# Exclude metadata and development time dependencies (like Grunt plugins)
+exclude: [README.markdown, package.json, grunt.js, Gruntfile.js, Gruntfile.coffee, node_modules]
+
+#
+sass:
+    sass_dir: /assets/css
+    style:    compressed
