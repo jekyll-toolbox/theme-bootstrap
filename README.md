@@ -1,7 +1,7 @@
 # Theme: Bootstrap
 A Jekyll Template based on Bootstrap 4
 
-Components based on the folowing Bootstrap Templates
+Components based on the following Bootstrap Templates
 
 - startbootstrap
 - startbootstrap-1-col-portfolio
